@@ -1,0 +1,821 @@
+/*
+ Theme Name:     Divi Child
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+.mbFullPageMenu {
+    display: block;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.showDropdownDesktop {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    background-color: #082969!important;
+}
+
+/* Fetched from Customizer */
+
+/*Disable Full Site Front-End Editing For Divi*/
+/* .et-fb .et-l--header,
+.et-fb .et-l--footer {
+display: none !important;
+} */
+
+/* Topp */
+.mbToppMenu.et_pb_menu.et_pb_menu_0_tb_header ul li {
+    padding-left: 30px;
+}
+.mbFullPageMenu .et_pb_image .et_pb_image_wrap img[src*=".svg"] {
+    width: 100%;
+}
+.mbFullPageMenu {
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+		left: 0;
+		z-index: 9999;
+}
+@media only screen and (max-width: 1350px) and (min-width: 1051px){
+	.mbToppMenu.et_pb_menu.et_pb_menu_0_tb_header ul li {
+	padding-left: 11px;
+	}
+.mbToppMenu.et_pb_menu.et_pb_menu_0_tb_header ul li a {
+  font-size: 16px;
+	}
+}
+@media only screen and (max-width: 1050px) and (min-width: 981px){
+.mbToppMenu.et_pb_menu.et_pb_menu_0_tb_header ul li a {
+  font-size: 14px;
+	}
+.mbToppMenu.et_pb_menu.et_pb_menu_0_tb_header ul li {
+	padding-left: 5px;
+	}
+}
+/* LANGUAGE SWITCHER */
+.mbLanguageSwitcher
+.wpml-ls-item .wpml-ls-native {
+	font-size: 0;
+}
+.mbLanguageSwitcher.et_pb_code_2_tb_header, .mbLanguageSwitcher.mbLangDesktop {
+	padding-right:23px;
+}
+.mbLanguageSwitcher.et_pb_code_2_tb_header {
+	 background-position: 21px 20px;
+}
+.mbLanguageSwitcher.mbLangDesktop {
+	 background-position: 21px 12px;
+}
+.mbLanguageSwitcher ul li a, .mbLanguageSwitcher.mbLangDesktop ul li a {
+	cursor:pointer!important;
+}
+.mbLanguageSwitcher ul li a {
+	padding:13px 3px 15px 30px;
+}
+.mbLanguageSwitcher.mbLangDesktop ul li a {
+	padding:5px 3px 15px 30px;
+}
+.mbLanguageSwitcher.mbLangDesktop .wpml-ls-item .wpml-ls-native::after {
+	color: #082969!important;
+}
+
+.mbLanguageSwitcher
+	.wpml-ls-item .wpml-ls-native::after {
+		font-size:20px;
+		font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif;
+		color: #FFFFFF!important;
+		    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+}
+.mbLanguageSwitcher
+	.wpml-ls-item-en .wpml-ls-native::after {
+    content: "EN"!important;
+}
+.mbLanguageSwitcher .wpml-ls-item-no .wpml-ls-native::after{
+  content: "NO"!important;
+}
+.mbLanguageSwitcher.mb_mobil {
+	background-position: 21px 10px;
+}
+.mbLanguageSwitcher.mb_mobil .wpml-ls-item .wpml-ls-native::after {
+	font-size: 18px;
+}
+.mbLanguageSwitcher.mb_mobil ul li a {
+    padding: 3px 3px 15px 30px;   
+}
+/* MOBILE */
+.mbFullPageMenuMob .Vertikal_meny .et_pb_menu .et_pb_menu__menu {
+        display: block;
+    }
+.mbFullPageMenuMob .Vertikal_meny .et_mobile_nav_menu {
+        display: none;
+  }
+.mbFullPageMenuMob  .et_pb_menu--style-left_aligned .et_pb_menu__wrap {
+	    justify-content: flex-start;
+}
+/* END Topp */
+
+/* Hamburger */
+.mbHamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38px;
+  height: 26px;
+  cursor: pointer;
+}
+.mbHamburger div {
+  align-self: flex-end;
+  height: 4px;
+  width: 100%;
+  background: #082969;
+	border-radius:4px;
+}
+.mbHamburger .meat {
+ transition: all 300ms ease-in-out;
+}
+.mbHamburger:hover .meat {
+    transform: translateX(-10px);
+    transition: transform 300ms ease-in-out;
+}
+
+/* MOBILE */
+.mbHamburgerMob {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mbHamburgerMob div {
+  align-self: flex-end;
+  height: 2px;
+  width: 100%;
+  background: #082969;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.showDropdownMob .mbHamburgerMob .top-bun {
+  transform: translateY(6px) rotate(45deg);
+}
+.showDropdownMob .mbHamburgerMob .meat {
+  opacity: 0;
+}
+.showDropdownMob .mbHamburgerMob .bottom-bun {
+  transform: translateY(-8px) rotate(-45deg);
+}
+/* END Hamburger */
+
+
+/* Megameny btn */
+#dropdownD, #dropdownDmobil {
+	cursor: pointer!important;
+}
+/*Desktop meny*/
+.vertikal_meny_desktop .et_pb_menu__menu>nav>ul>li{
+	width: 100%!important;
+	padding: 12px 0 4px 50px!important;
+	list-style-type: none!important;
+background-image: url("/wp-content/uploads/2023/07/Pil.svg");
+  background-repeat: no-repeat;
+	background-position: center left 15px;
+	background-size:12px;
+}
+.vertikal_meny_desktop_linje .et_pb_menu__menu>nav>ul>li{
+	border-bottom: 1px solid #647fa8;
+	width: 100%!important;
+	padding: 24px 0 16px 50px!important;
+	list-style-type: none!important;
+  background-repeat: no-repeat;
+	background-position: center left 15px;
+	background-size:12px;
+		background-image: url("/wp-content/uploads/2023/07/Pil.svg");
+}
+/*Mobil meny*/
+.vertikal_meny_mobil .et_pb_menu__menu>nav>ul>li, .vertikal_meny_mobil_sek .et_pb_menu__menu>nav>ul>li {
+	width: 100%!important;
+	padding: 8px 0 8px 50px!important;
+	list-style-type: none!important;
+	background-image: url("/wp-content/uploads/2023/07/Group-574.svg");
+  background-repeat: no-repeat;
+	background-position: center left 15px;
+	background-size:12px;
+}
+.vertikal_meny_mobil .et_pb_menu__menu>nav>ul>li {
+	background-image: url("/wp-content/uploads/2023/07/Group-574.svg");
+}
+.vertikal_meny_mobil_sek .et_pb_menu__menu>nav>ul>li {
+	background-image: url("/wp-content/uploads/2023/07/arrow-right_blue.png");
+}
+.vertikal_meny_mobil .et_pb_menu__menu>nav>ul>li>a, .vertikal_meny_mobil_sek .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 0!important;
+}
+/* Videobanner forside */
+.mb_video-bg .mejs-video {
+	top:-25%;
+}
+
+/* Toppbanner undersider */
+.topp_undersider_banner{
+-webkit-clip-path: 
+polygon(65px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+clip-path: 
+polygon(65px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+	margin-left:170px;
+}
+.topp_undersider_banner_right{
+-webkit-clip-path: 
+polygon(0% 0%,100% 0%,100% 0%,97% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+clip-path: 
+polygon(0% 0%,100% 0%,100% 0%,97% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+}
+/*Tekst i to kolonner*/
+.tekst_to_kolonner{
+	width: 47%!important;
+	float: left!important;
+	margin-right: 5%!important;
+}
+
+.tekst_to_kolonner:nth-child(odd){
+	margin-right: 0!important;
+}
+/*Image slated on right side*/
+.Slated_banner{
+-webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+/*Image slated on left side*/
+.Slated_banner_left {
+    -webkit-clip-path: polygon(10% 0,100% 0,100% 100%,0% 100%);
+    clip-path: polygon(10% 0,1000% 0,100% 100%,0% 100%);
+}
+/*Image slated two corners - corners cut off*/
+.Image_corner img{
+  width:100%!important;
+  height:100%;
+  -webkit-clip-path: 
+		polygon(5% 0%,80% 0%,100% 0%,100% 90%,95% 100%,0% 100%,0% 80%,0% 10%);
+  clip-path: 
+		polygon(5% 0%,80% 0%,100% 0%,100% 90%,95% 100%,0% 100%,0% 80%,0% 10%);
+}
+.hvalsafari_tittel{
+	font-size:36px;
+}
+/*Nyheter landingsside*/
+.et_pb_image_container {
+    margin: -20px 0px 29px!important;
+}
+.et_pb_gutters3 .et_pb_column_4_4 .et_pb_blog_grid .column.size-1of3{
+    width: 31.33%;
+    margin-right: 3%;
+}
+.et_pb_gutters3 .et_pb_column_4_4 .et_pb_blog_grid .column.size-1of3:nth-child(3n){
+	 margin-right: 0;
+}
+.et_pb_blog_grid .et_pb_post {
+	padding: 0!important;
+}
+/*Nyheter slider*/
+.Innlegg .dipi_blog_slider .swiper-button-prev:after{
+	content: url('/wp-content/uploads/2023/10/chevron-left.svg')!important;
+}
+.Innlegg .dipi_blog_slider .swiper-button-next:after{
+	content: url('/wp-content/uploads/2023/10/chevron-right.svg')!important;
+}
+.Innlegg .dipi_blog_slider_0 .swiper-button-next {
+    left: auto!important;
+    right: 40px!important;
+}
+.Innlegg .dipi_blog_slider_0 .swiper-button-prev {
+    left: auto!important;
+    right: 85px!important;
+}
+/*Nyheter liste*/
+.et_pb_blog_0 .et_pb_post .entry-title {
+    padding-bottom: 20px!important;
+}
+/* Blogg-innlegg samme høyde - legg til custom_blog på rad */
+.mb_custom_blog .et_pb_post {
+		max-height: 500px;
+		min-height: 500px;
+	}
+	/*liste over bloggartikler på bloggsiden*/
+	.mb_blogg_liste .et_pb_post {
+		overflow: hidden;
+		position: relative;
+	}
+.mb_blogg_liste .post-content:before {
+		    background: linear-gradient(to bottom,rgba(29,31,41,0) 0%,rgb(255 255 255) 77%,rgb(255 255 255) 100%);
+    background: -moz-linear-gradient(top,rgba(29,31,41,0) 0%,rgba(29,31,41,1) 77%,rgba(29,31,41,1) 100%);
+    background: -webkit-linear-gradient(top,rgba(29,31,41,0) 0%,rgb(255 255 255) 77%,rgb(255 255 255) 100%);
+		bottom: 0;
+		content: '';
+		height: 70px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+/*Nyhetsarkiv custom les mer knapp*/
+.Nyhetsarkiv h2 a::after{
+content: 'Les mer';
+background-image: url("/wp-content/uploads/2023/10/pil_red.svg");
+  background-repeat: no-repeat;
+	background-position: 0 26px;
+	background-size:13px;
+  font-family: 'Gotham Medium',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size:16px;
+	display:block;
+	padding:20px 0 0 25px;
+}
+/*Nyhetsarkiv custom read more knapp*/
+html[lang="en"] .Nyhetsarkiv h2 a::after{
+	content: 'Read more';
+}
+/* get link to cover custom les mer knapp */
+.Nyhetsarkiv h2 a {
+	display: inline-block;
+}
+/*Nyheter / poster / Nyttig info*/
+/*Eksterne linker i poster*/
+.ekstern_link a{
+    background-image: url(/wp-content/uploads/2023/10/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 18px;
+    padding: 0px 0 0 30px;
+    color: #072969!important;
+}
+.tittel_linje_post{
+	border-bottom:1px solid rgb(112 112 112 / 36%);;
+	margin-bottom:15px;
+}
+.knapp_poster{
+	display:inline-block;
+}
+.knapp_poster a{
+	color:#072969;	       
+	background:#F0F2F6;
+	padding:20px 40px;
+	font-weight:800;
+	font-size:16px;
+}
+.Innlegg_arkiv_liste .et_pb_blog_grid .et_pb_post{
+	border-top:1px solid #cccccc!important;
+	border-bottom:1px solid #cccccc!important;
+	padding:28px 0 20px 0!important;
+	margin-bottom:-1px!important;
+}
+.Innlegg_arkiv_liste .et_pb_image_container {
+    margin: 0px!important;
+}	
+/*set the image width*/
+.Innlegg_arkiv_liste .entry-featured-image-url  {
+width: 30%;
+float: left;
+margin-bottom: 0!important;
+}
+/*set the details width*/
+.Innlegg_arkiv_liste .entry-title,
+.Innlegg_arkiv_liste .post-meta,
+.Innlegg_arkiv_liste .post-content {
+width: 70%;
+float: left;
+padding-left: 30px;
+}
+
+/*Nyheter / blogg Liste*/
+.Innlegg .dipi_blog_slider .dipi-post-content {
+    padding: 20px 0!important;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 0!important;
+    width: 85%!important;
+    justify-content: end!important;
+}
+/*Expander FAQ liste -  accordion*/
+.pa-accordion-icon-left .et_pb_toggle_title{
+    border-bottom: 1px solid #E30613!important;
+	  padding: 20px 0 20px 34px!important;
+}
+.pa-accordion-icon-left .et_pb_toggle_close, .pa-accordion-icon-left .et_pb_toggle_open {
+    padding: 0!important;
+}
+.pa-accordion-icon-left
+.et_pb_toggle_content{
+	padding:30px 0 40px 0!important;
+}
+.pa-add-accordion-icon{
+	display:inline-block;
+	width:100%;
+}
+.et_pb_accordion .et_pb_toggle_open .et_pb_toggle_title:before {
+	display: block!important;
+	color: #E30613;
+	content: "\4d"!important;
+	font-size:28px!important;
+	content: "\4d"!important;
+}
+.pa-add-accordion-icon .et_pb_toggle:nth-child(even){
+	margin-right: 0!important;
+}
+/*add icon to the opened accordion*/
+.pa-add-accordion-icon .et_pb_accordion_item.et_pb_toggle_open .et_pb_toggle_title:before {
+	display: block;
+	content: "\4d";
+  font-size: 20px;
+  color: #082969;
+}
+/*move the accordion icon to the left*/
+.pa-accordion-icon-left .et_pb_toggle_title:before {
+	left: 0 !important;
+}
+/*adjust spacing on the left for the icon*/
+.pa-accordion-icon-left .et_pb_toggle_title {
+	padding-left: 40px!important
+}
+.entry-content ul{
+	line-height:1.6em!important;
+}
+/*Accordion - link list content*/
+.pil_venstre_expander ul{
+	list-style-image: url('/wp-content/uploads/2023/10/test.svg');
+}
+.pil_venstre_expander ul li::marker{
+	font-size:40px!important;
+	line-height: 40px!important;
+}
+.pil_venstre_expander ul li{
+	list-style-type: none!important;
+	padding: 0px 0 10px 15px;
+	margin-left: 28px;
+}
+.pil_venstre_expander ul li a{
+	color:#072969!important;
+	line-height: 1.4em;
+}
+
+/*Nyttig info - liste med linker, pil venstre*/
+.Nyttig_info .et_pb_column {
+  margin-bottom: 0px;
+}
+.pil_venstre{
+	display:inline-block;
+	width:100%;
+}
+.pil_venstre a, .pil_venstre_en_kolonne a{
+	color:#072969!important;
+}
+.pil_venstre ul li, .pil_venstre_en_kolonne ul li{
+	list-style-type: none!important;
+	background-image: url("/wp-content/uploads/2023/10/arrow-right_outline_blue.svg");
+  background-repeat: no-repeat;
+	background-position: center left 15px;
+	background-size:16px;
+	border-bottom: 1px solid #E30613;
+  padding: 20px 0 20px 50px;
+}
+.pil_venstre ul li{
+	width: 47%!important;
+	float: left!important;
+	margin-right: 5%!important;
+}
+.pil_venstre ul li:nth-child(even){
+	margin-right: 0!important;
+}
+/*Bulletlist - liste med ikon venstre*/
+.Ikon_venstre ul{
+	    padding: 0 0 23px 0em!important;
+}
+.Ikon_venstre ul li{
+	    list-style-type: none!important;
+    background-image: url(/wp-content/uploads/2023/09/Ikon_bullet.svg);
+    background-repeat: no-repeat;
+    background-position: top 15px left 0px;
+    background-size: 10px;
+    padding: 8px 0 10px 35px;
+}
+/*Mer om - liste med linker pil venstre*/
+.Mer_om .et_pb_column {
+    margin-bottom: 0px;
+}
+.Mer_om ul li{
+	list-style-type: none!important;
+	background-image: url("/wp-content/uploads/2023/07/arrow-right_blue.png");
+  background-repeat: no-repeat;
+	background-position: center left 15px;
+	background-size:12px;
+	border-bottom: 1px solid #E30613;
+  padding: 15px 0 15px 50px;
+	font-weight: 700;
+}
+/*Liste med linker - liste med linker pil venstre*/
+.link_liste ul li{
+	list-style-type: none!important;
+	background-image: url("/wp-content/uploads/2023/07/Group-574.svg");
+  background-repeat: no-repeat;
+	background-position: center left; 
+	padding-left: 33px;
+	margin-bottom: 10px;
+}
+.blue_link a{
+	color:#082969;
+}
+.entry-content ul{
+    padding: 0!important;
+}
+/*Liste - ikon symbol*/
+.liste_symbol ul li{
+	list-style-type: none!important;
+	background-image: url("/wp-content/uploads/2023/07/bullet.svg");
+  background-repeat: no-repeat;
+	background-position: center left; 
+	padding-left: 33px;
+	margin-bottom: 10px;
+	background-size: 14px;
+}
+/*Fotokreditering / photo credit - image module*/
+.pac_dih__caption p {
+    text-align: left!important;
+}
+.pac_dih__caption::before, .wp-element-caption::before{
+	 content: 'Foto:';
+   display: inline-block;
+   float: left;
+   margin-right: 5px;
+}
+.pac_dih__caption{
+	margin-top: 5px!important;
+	font-size: 14px!important;
+}
+.wp-block-image figcaption {
+	display: inline-block!important;
+}
+/*Fotokreditering / photo credit for galleri slider undersider - bruk tittel for kreditering*/
+.galleri_kreditering .item-title{
+position: absolute;
+bottom: 0px;
+right: 0;
+width: 100%;
+color: #fff;
+background: rgb(0 0 0 / 50%);
+padding:8px 10px 8px 0; 
+}
+/*Liste over turer / pakkereiser Fjordcruise*/
+.Fjordcruise .swiper-container{
+  width:2450px!important;
+}
+.pris{
+	font-size:32px;
+}
+.info_pris{
+	font-size:14px;
+}
+/*Liste med linker*/
+.Rad_uten_bunnmarg .et_pb_row{
+    margin-bottom: 0!important;
+}
+/*Pakketilbud - liste med linker*/
+.Fjordcruise .dipi-carousel-child-wrapper{   
+	margin-right:15px!important; 
+}
+.Fjordcruise .dipi_carousel .swiper-button-next, .dipi_carousel .swiper-button-prev {
+    padding: 0px 30px!important;
+}
+.dipi_carousel .swiper-button-next, .dipi_carousel .swiper-button-prev {
+    top: 97%!important;
+}
+.dipi_carousel .swiper-arrow-button {
+    box-shadow:none!important;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	opacity: 1!important;
+}
+.dica_divi_carouselitem .empty-content{
+  min-height: 250px;
+}
+.dica_divi_carousel .swiper-button-next:before {
+    float: right;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 4%!important;
+}
+.knapp_fjordcruise{
+  width: 100%;
+    text-align: center;
+}
+.knapp_fjordcruise:before{
+  margin-left: -31px!important;
+	content: url('/wp-content/uploads/2023/07/Pil.svg')!important;
+}
+/*Rød tag - brukt for fjordcruise slider og poster for mobilversjon*/
+.liten_tag{
+-webkit-clip-path: 
+polygon(10px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+clip-path: 
+polygon(10px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+	margin-left:170px;
+}
+/*Blå tag - brukt for nyheter/nyttig info detaljside desktop*/
+.stor_tag{
+-webkit-clip-path: 
+polygon(20px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+clip-path: 
+polygon(20px 0%,100% 0%,100% 0%,100% 100%,100% 100%,0% 100%,0% 100%,0% 100%);
+	margin-left:170px;
+}
+/*Knapp tilbake hover*/
+.Nyheter_knapp .et_pb_bg_layout_light.et_pb_button:hover, .pa-inline-buttons .et_pb_bg_layout_light.et_pb_button:hover{
+    background-color: rgb(0 0 0 / 0%)!important;
+}
+#pa-back-button{
+	cursor: pointer;
+}
+/*place button modules next to each other in the same column*/
+.pa-inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+}
+.anker_knapp{
+	background-image: url("/wp-content/uploads/2023/10/Group-720.svg");
+  background-repeat: no-repeat;
+	background-position: center left;
+	background-size:16px;
+}
+/*Footer*/
+.Footer_linker.et_pb_blurb_position_left .et_pb_blurb_container {
+    padding-left: 5px!important;
+}
+.Footer_linker .et_pb_blurb_position_left .et_pb_main_blurb_image{
+	margin-top:5px!important;
+}
+.white_link a{
+	color:#fff!important;
+}
+.kontaktikon_liten .et_pb_main_blurb_image {
+    width: 10px!important;
+}
+.et_pb_social_media_follow li {
+    margin-right: 8%!important;
+}
+/* Footer hamburger */
+.mb_footer_hamburger .mbHamburger div {
+  background: #fff;
+}
+/*Blurb / teaser - kontaktside justering ikoner*/
+.mb_kontaktikon .et_pb_main_blurb_image img{
+	margin-top: 5px!important;
+}
+/********************************* 
+ Mobil 
+ ********************************/
+@media only screen and (max-width: 1500px) and (min-width: 0){
+/*Overstyring av tittelstørrelse for nyhet slider*/
+.Innlegg .dipi_blog_slider .dipi-entry-title {
+		font-size: 22px!important;
+	}
+.Innlegg .et_pb_row{
+	width:100%!important;
+	max-width: 100vw!important;
+	}
+.Innlegg	.dipi_blog_slider_0 .dipi-blog-post {
+padding-right: 20px!important;
+    padding-left: 20px!important;
+}
+}
+@media only screen and (max-width: 1200px){
+	/*Tekst i to kolonner*/
+.tekst_to_kolonner{
+	width: 100%!important;
+	margin-right: 0!important;
+}
+}
+@media only screen and (max-width: 970px){
+/*Expander FAQ liste -  accordion*/
+	.pa-add-accordion-icon .et_pb_toggle{
+		width: 100%!important;
+		float: left!important;
+		margin-right: 0!important;
+	}
+/*Nyttig info - liste med linker, pil venstre*/	
+	.pil_venstre ul li{
+	width: 100%!important;
+	margin-right: 0!important;
+}
+/*Image slated two corners*/
+.Slated_banner{
+  width:100%;
+  height:100%;
+ -webkit-clip-path: polygon(10% 0%,80% 0%,100% 0%,100% 85%,90% 100%,0% 100%,0% 80%,0% 15%);
+    clip-path: polygon(10% 0%,80% 0%,100% 0%,100% 85%,90% 100%,0% 100%,0% 80%,0% 15%);
+}
+/*Nyheter landingsside*/
+	.et_pb_image_container {
+    margin: -20px -20px 29px!important;
+}
+.et_pb_blog_grid .et_pb_post {
+	padding: 19px!important;
+}
+/*Nyheter / blogg Liste*/
+.Innlegg .dipi_blog_slider .dipi-post-content {
+	padding: 20px!important;
+}
+.swiper-button-next, .swiper-button-prev {
+    display: none!important;
+}
+/*Fjordcruise*/	
+	.Fjordcruise .swiper-container{
+  width:100%!important;
+}
+.Fjordcruise .dipi-carousel-child-wrapper {
+    margin-right: 20px!important;
+}
+	.pris{
+	font-size:22px;
+}
+.three-columns .et_pb_column {
+      margin-bottom: 0px!important;
+      width: 33%!important;
+}	
+}
+@media only screen and (max-width: 899px) and (min-width: 0){
+.Innlegg	.dipi_blog_slider_0 .dipi-blog-post {
+padding-right: 20px!important;
+    padding-left: 0px!important;
+}	
+    .three-columns .et_pb_column {
+    margin-bottom: 0px!important;
+    width: 100%!important;
+}
+}
+/*Bildegalleri - slider Fjordcruise*/
+@media only screen and (max-width: 990px) and (min-width: 0){
+	/* Blogg-innlegg samme høyde - legg til custom_blog på rad */
+.mb_custom_blog .et_pb_post {
+		max-height: 100%;
+		min-height: 100%;
+	}
+	.mb_blogg_liste .et_pb_post {
+		overflow: unset;
+		position: unset;
+	}	
+  .dica_divi_carouselitem .empty-content{
+  min-height: 250px;
+}
+.swiper-button-next, .swiper-button-prev {
+    display: inline!important;
+}
+.dica_divi_carouselitem{
+    width: 97%!important;
+  }
+	.Innlegg .dipi_blog_slider .swiper-button-next, .Innlegg .dipi_blog_slider .swiper-button-prev  {
+    display:none!important;
+	}
+}
+@media only screen and (max-width: 900px){
+.swiper-button-next, .swiper-button-prev {
+    display: inline!important;
+}
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+	/*News - Innlegg arkiv uten bilde*/
+	.Innlegg_arkiv_liste .et_pb_blog_grid .et_pb_image_container img {
+	display:none;
+}
+	.Innlegg_arkiv_liste .entry-title {
+		width:100%;
+		padding-left:0;
+	}
+}
+@media only screen and (max-width: 767px){
+/* Nyhetsarkiv custom les mer knapp */
+.Nyhetsarkiv h2 a::after{
+	background-position: 0 31px;
+}
+		/*News - Innlegg arkiv uten bilde*/
+		.Innlegg_arkiv_liste .et_pb_blog_grid .et_pb_image_container img {
+	display:none;
+}
+	.Innlegg_arkiv_liste .entry-title {
+		width:100%;
+		padding:0 30px;
+	}
+.pagination {
+    margin: 30px 0 0 30px!important;
+}
+}

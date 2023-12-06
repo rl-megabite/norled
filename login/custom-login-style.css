@@ -1,0 +1,166 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Tags: responsive-layout,one-column,two-columns,three-columns,four-columns,left-sidebar,right-sidebar,custom-background,custom-colors,featured-images,full-width-template,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready
+Version: 3.27.1.1566218531
+Updated: 2019-08-19 12:42:11
+
+*/
+
+
+body.login {
+	padding: 20px;
+	min-width: 100%;
+	background: linear-gradient(270deg, #00547d, #0090d6, #9bdeff);
+	background-size: 600% 600%;
+	-webkit-animation: login-bg 30s ease infinite;
+	-moz-animation: login-bg 30s ease infinite;
+	-o-animation: login-bg 30s ease infinite;
+	animation: login-bg 30s ease infinite;
+}
+	
+	@-webkit-keyframes login-bg {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes login-bg {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-o-keyframes login-bg {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes login-bg { 
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	
+#login h1 a {
+	background-image: url("logo-login-blue-1.png");
+	background-size: 220px;
+	width: 100%;
+	height: 180px;
+}
+
+.login form{
+	box-shadow:none;
+	padding:20px;
+}
+
+#login {
+	background: #FFF;
+	margin: 8% auto 0 auto;
+	padding: 40px 20px;
+//	width: 360px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 13px rgba(2, 11, 28, 0.2);	
+}
+
+.login label {
+	color: #555;
+	font-size: 16px;
+}
+
+.login form .forgetmenot {
+	float:none;
+}
+
+#login form p.submit {
+	margin-top:15px;
+}
+
+.login.wp-core-ui .button-primary {
+	background: #0090d6;
+	border-color:#0090d6;
+	box-shadow: 0 1px 0 #0090d6;
+	color: #FFF;
+	text-shadow: none;
+	float: none;
+	clear: both;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	height: auto;
+	font-size: 15px;
+}
+
+
+p#nav {
+	display: none;
+}
+
+
+p#backtoblog {
+	display: none;
+}
+
+.login-footer-holder-header,
+.login-footer-holder {
+	width: 360px;
+	max-width: 380px;
+	padding: 20px 0 30px 0;
+	margin: 0 auto;
+}
+
+.login-footer-holder-header {
+	color: #fff;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+
+.login-footer-holder .col {
+	width: 30%;
+	margin-right: 3%;
+	display: inline-block;
+	text-align: center;
+}
+
+.login-footer-holder .twoCol {
+	width: 48%;
+	margin-right: 4%;
+	display: inline-block;
+	text-align: center;
+}
+
+
+.login-footer-holder .col3 {
+	margin-right: 0;
+}
+
+.login-footer-holder .twoCol.col2 {
+	margin-right: 0;
+}
+
+.login-footer-holder .col a,
+.login-footer-holder .twoCol a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+}
+.login-footer-holder .col a img {
+	max-width: 40px;
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 60px;
+
+}
+
+.login-footer-holder .col a span,
+.login-footer-holder .twoCol a span {
+	display: inline-block;
+}
+
+.login-footer-holder .col:hover a span,
+.login-footer-holder .twoCol:hover a span  {
+	border-bottom: 1px dotted #fff;
+}
