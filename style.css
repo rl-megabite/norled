@@ -5,7 +5,7 @@
  Author:         Elegant Themes
  Author URI:     https://www.elegantthemes.com
  Template:       Divi
- Version:        1.0.0
+ Version:        1.0.1
 */
 
 /* =Theme customization starts here
@@ -193,8 +193,8 @@ display: none !important;
 	width: 100%!important;
 	padding: 12px 0 4px 50px!important;
 	list-style-type: none!important;
-background-image: url("/wp-content/uploads/2023/07/Pil.svg");
-  background-repeat: no-repeat;
+    background-image: url("/wp-content/uploads/2023/07/Pil.svg");
+    background-repeat: no-repeat;
 	background-position: center left 15px;
 	background-size:12px;
 }

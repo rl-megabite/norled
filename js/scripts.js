@@ -77,7 +77,20 @@ function openMenuFunctionDesktop() {
     }
 }
 
-//mobile
+// footer
+mbHamburgerIconFooter.addEventListener("click", openMenuFunctionDesktopFooter);
+
+function openMenuFunctionDesktopFooter() {
+    mbFullPageMenu.classList.toggle("showDropdownDesktop");
+    
+    if ( mbHamburgerIconMob.classList.contains("showDropdownDesktop") ) {
+        mbFullPageMenu.classList.add("showDesktopMenu");
+    } else {
+        mbFullPageMenu.classList.remove("showDesktopMenu");
+    }
+}
+
+// mobile
 let mbHamburgerIconMob = document.querySelector(".mbHamburgerIconMob");
 let mbFullPageMenuMob = document.querySelector('.mbFullPageMenuMob');
 
