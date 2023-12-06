@@ -1,10 +1,23 @@
 <?php
-function my_theme_enqueue_styles() { 
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0.10' , true );
+/* Load parent theme stylesheet */
+function enqueue_parent_style() {
+    $theme_version = et_get_theme_version();
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css', array(), $theme_version);
+}
+add_action('wp_enqueue_scripts', 'enqueue_parent_style');
+  
+/* Load child theme stylesheet with query string */
+function enqueue_child_style() {
+    $style = get_stylesheet_directory() . '/style.css';
+    $cache_buster = date("YmdHi", filemtime( $style ) );
+    wp_dequeue_style('divi-style');
+    wp_deregister_style('divi-style');
+    wp_enqueue_style('divi-child', get_stylesheet_directory_uri() . "/style.css", array(), $cache_buster);
+}
+add_action('wp_enqueue_scripts', 'enqueue_child_style', 15);
+
+wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/scripts.js?ts=' . time(), true );
 
 
 // Customize login-page
